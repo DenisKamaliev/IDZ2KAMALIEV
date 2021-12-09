@@ -7,9 +7,7 @@ public class StringProcessor {
         if (N < 0){
             throw new IllegalArgumentException ("N can not been below zero");
         }
-            for (int i = 0; i < N; i++) {
-                s1.append(s);
-            }
+        s1.append(String.valueOf(s).repeat(N));
             return s1.toString();
 
     }
